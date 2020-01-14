@@ -11,9 +11,9 @@ package bol14;
  * @author clagosuarez
  */
 public class ConversorTemperaturas {
-    private final int constante = 80;
+    private final int minGrados = 80;
     public double centigradosAFharenheit(float c) throws TemperaturaErradaExcepcion{
-        if (c < 80) {
+        if (c < minGrados) {
             throw new TemperaturaErradaExcepcion(" Recorda que a temperatura non pode ser < 80 ºC ");
         }else{
             double f = 9.0 / 5.0 * c + 32.4;
