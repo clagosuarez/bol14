@@ -13,7 +13,7 @@ package bol14;
 public class ConversorTemperaturas {
     private final int constante = 80;
     public double centigradosAFharenheit(float c) throws TemperaturaErradaExcepcion{
-        if (c > 80) {
+        if (c < 80) {
             throw new TemperaturaErradaExcepcion(" Recorda que a temperatura non pode ser < 80 ºC ");
         }else{
             double f = 9.0 / 5.0 * c + 32.4;
